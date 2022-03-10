@@ -12,12 +12,12 @@ public class StartProject implements ServletContextListener {
     }
 
     public void contextInitialized(ServletContextEvent sce)  { 
-    	try {
-			Class.forName("com.mysql.jdbc.Driver");
-			Context.getSingleton();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
+    	//try {
+			//Class.forName("com.mysql.jdbc.Driver");
+			//Context.getSingleton();
+		//} catch (ClassNotFoundException e) {
+		//	e.printStackTrace();
+		//}
    }
 	
     public void contextDestroyed(ServletContextEvent sce)  { 
