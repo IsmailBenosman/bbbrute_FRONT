@@ -1,1 +1,8 @@
-/target/
+.settings/
+target/
+.classpath
+.project
+.DS_Store
+bin/
+.metadata/
+persistence.xml
