@@ -20,7 +20,7 @@ import util.Context;
 public class Home extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 
 	
@@ -44,7 +44,7 @@ public class Home extends HttpServlet {
 		else 
 		{
 			request.setAttribute("error", "Identifiants invalides !");
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("/index.jsp").forward(request, response);
 		}
 	
 	}
