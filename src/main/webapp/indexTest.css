@@ -6,7 +6,7 @@
   min-width: 50%;
   min-height: 50%;
 }
-
+.whiteText{color:white;}
 img{
   width: 15%;
 }
@@ -49,3 +49,6 @@ body
     background-color: black;
   	overflow: hidden;
 }
+
+#errorConnect{color:#e75959;}
+
