@@ -26,10 +26,10 @@ public class HomeController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		String mail = request.getParameter("login");
+		String login = request.getParameter("login");
 		String password = request.getParameter("password");
 		
-		Compte connected=Context.getSingleton().getDAOCompte().seConnecter(mail,password);
+		Compte connected=Context.getSingleton().getDAOCompte().seConnecter(login,password);
 		
 		request.getSession().setAttribute("connected", connected);
 		
