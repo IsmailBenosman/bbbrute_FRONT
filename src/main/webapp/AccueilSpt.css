@@ -5,7 +5,7 @@ html {
 body
 {
   height: 100%;
-    background-image: url("Images/Fond.jpg");
+    background:   linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),  url("Images/WPSerpentard.png");
 }
 body::-webkit-scrollbar
 {
@@ -23,7 +23,7 @@ body::-webkit-scrollbar
   display: flex;
   justify-content: space-between;
   background-color: gray;
-  background-image: url("Images/SerpentardFlag.jpg");
+  background-image:url("Images/Serpentard.jpg");
 background-size: cover;
 background-repeat: repeat;
 width: 100%;
@@ -31,10 +31,7 @@ width: 100%;
 
 #compte
 {
-  background-image: url("Images/Serpentard.jpg");
-  background-size:cover;
-  background-repeat: repeat;
-  background-color: #D8D8D8;
+
   width: 25%;
   height:100%;
 
@@ -90,9 +87,9 @@ background-color:#21481A;
 .chat-popup {
   display: none;
   position: fixed;
-  top: 25%;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  top: 31%;
+  right: 9px;
+
   z-index: 10;
 }
 
@@ -340,7 +337,7 @@ footer
 {
   display: flex;
   align-content: flex-end;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
