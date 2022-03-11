@@ -1,10 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8" %>
 
+    
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="AccueilEleve.css">
+    <link rel="stylesheet" href="AccueilSpt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Accueil élève</title>
+    <title>Accueil Serpentard</title>
   </head>
   <body>
     <header>
@@ -20,7 +23,7 @@
               <div id="infosleft">
 
                <span id="Nom"> PIERSON   <!--</span><span id="Prenom">  --> Robin </span> <!--18/03/97 à ajouter dans page compte-->
-                <p id="solde"> SOLDE : 87,54 €</p>
+                <p id="solde"> SOLDE : 0,54 €</p>
               </div>
               <img id="photo" src="Images/EleveS1.jpg" alt="">
             </div>
@@ -209,7 +212,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     document.getElementById("myForm").style.display = "none";
   }
 
-
-
     </script>
 </html>
+    
