@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8" %>
 
-    
 <html>
   <head>
     <meta charset="utf-8">
@@ -211,6 +210,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
+
+
 
     </script>
 </html>

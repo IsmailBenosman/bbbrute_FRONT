@@ -23,7 +23,7 @@ body::-webkit-scrollbar
   display: flex;
   justify-content: space-between;
   background-color: gray;
-  background-image:url("Images/Serpentard.jpg");
+  background-image:url("Images/Poufsouffle.jpg");
 background-size: cover;
 background-repeat: repeat;
 width: 100%;
@@ -237,7 +237,6 @@ h1
   text-align: center;
 }
 
-}
 * {box-sizing: border-box;}
 .mySlides {display: none;}
 

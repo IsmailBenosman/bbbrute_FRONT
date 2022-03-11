@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8" %>
+   
+   <c:if test="${connected.getClass().getSimpleName()=='Eleve'}">
+	<c:redirect url = "AccueilESpt.jsp"/>
+</c:if>
+<c:if test="${connected.getClass().getSimpleName()=='Prof'}">
+	<c:redirect url = "AccueilPPs.jsp"/>
+</c:if>
+   
+    
 <!DOCTYPE html>
 <html>
 
@@ -36,12 +45,10 @@
     </table>
       </form>
 
-    <div id="errorConnect">Saisir des identifiants valides</div>
+    <div id="errorConnect">${error}</div>
 <br/>
     <input id="connexion" value="Se connecter" type="submit">
 
-  <!-- <br/>
-  <a id="inscription" href="inscription.html"> Inscription </a> -->
 
 </div>
 
