@@ -8,7 +8,4 @@
     <listener-class>listener.TomcatLaunch</listener-class>
   </listener>
 
-
-
-
 </web-app>
