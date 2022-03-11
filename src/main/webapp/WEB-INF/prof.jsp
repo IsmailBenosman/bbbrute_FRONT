@@ -32,12 +32,12 @@
                 <p id="solde"> SOLDE :${connected.solde }€</p>
               </div>
               <img id="photo" src="Images/profs/${connected.img }" alt="">
-<!--               <img id="photo" src="Images/ProfP.png" alt=""> -->
+
             </div>
 
               <div id="btn">
               <button id="btnModif" type="submit" class="btn">Modifier</button>
-               <a href="disconnect"><button  id="btnDeco" class="open-button" >Deconnexion</button></a>
+  			<a href="disconnect"><button class="btnDecon" class="open-button">Deconnexion</button></a>
             </div>
 
           </div>
@@ -45,7 +45,7 @@
 
       <nav class="topnav">
         <a  href="#home" class="navig">Home </a>
-        <a  href="#home">Option 1 </a>
+        <a  href="ListEleve.jsp">Eleves </a>
         <a href="#about">Option 2</a>
         <a href="#contact">Option 3</a>
         <form action="/action_page.php">
