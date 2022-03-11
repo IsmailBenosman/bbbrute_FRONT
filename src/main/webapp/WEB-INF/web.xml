@@ -7,5 +7,14 @@
   <listener>
     <listener-class>listener.TomcatLaunch</listener-class>
   </listener>
-
+  <servlet>
+    <description></description>
+    <display-name>Disconnect</display-name>
+    <servlet-name>Disconnect</servlet-name>
+    <servlet-class>controllers.Disconnect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Disconnect</servlet-name>
+    <url-pattern>/Disconnect</url-pattern>
+  </servlet-mapping>
 </web-app>

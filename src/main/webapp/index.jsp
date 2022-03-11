@@ -5,10 +5,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
    
    <c:if test="${connected.getClass().getSimpleName()=='Eleve'}">
-	<c:redirect url = "AccueilESpt.jsp"/>
+	<c:redirect url = "eleve"/>
 </c:if>
 <c:if test="${connected.getClass().getSimpleName()=='Prof'}">
-	<c:redirect url = "AccueilPPs.jsp"/>
+	<c:redirect url = "prof"/>
 </c:if>
    
 
@@ -17,7 +17,7 @@
 
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="indexTest.css">
+<link rel="stylesheet" href="css/indexTest.css">
 <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
 <title>Poudlard</title>
 </head>
