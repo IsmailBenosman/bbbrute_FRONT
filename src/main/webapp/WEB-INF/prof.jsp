@@ -37,7 +37,7 @@
 
               <div id="btn">
               <button id="btnModif" type="submit" class="btn">Modifier</button>
-               <a href="disconnect"><button  id="btnSkill" class="open-button" >Deconnexion</button></a>
+               <a href="disconnect"><button  id="btnDeco" class="open-button" >Deconnexion</button></a>
             </div>
 
           </div>
