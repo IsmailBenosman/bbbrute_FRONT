@@ -1,35 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="AccueilPs.css">
+    <c:choose>
+    	<c:when  test="${connected.maison=='Serpentard'}"> <link rel="stylesheet" href="css/AccueilSpt.css"></c:when>
+    	<c:when  test="${connected.maison=='Poufsouffle'}"> <link rel="stylesheet" href="css/AccueilPs.css"></c:when>
+    </c:choose>
+   
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Accueil Poufsouffle</title>
+    <title>Accueil ${connected.maison}</title>
   </head>
   <body>
     <header>
       <div id="banniere">
 
-        <a  href=indexTest.html><img id="logo" src="Images/HogwartsLogo.png" alt="logo"> <a href="indexTest.html"></a>
+        <a  href="home"><img id="logo" src="Images/HogwartsLogo.png" alt="logo"></a>
 
-<!-- Banniere: info perso --------------------->
+
           <div id="compte">
 
             <div id="infoglobal">
 
               <div id="infosleft">
 
-               <span id="Nom"> ${connected.nom}  </span><span id="Prenom"> ${connected.prenom} </span> <!--18/03/97 à ajouter dans page compte-->
-                <p id="solde"> SOLDE : 8469,54 €</p>
+               <span id="Nom"> ${connected.nom} ${connected.prenom} </span> <!--18/03/97 à ajouter dans page compte-->
+                <p id="solde"> ${connected.solde}</p>
               </div>
-              <img id="photo" src="Images/EleveP1.jpg" alt="">
-            </div>
+              <img id="photo" src="Images/eleves/${connected.img }" alt="">
+            	</div>
 
               <div id="btn">
               <button id="btnModif" type="submit" class="btn">Modifier</button>
               <button  id="btnSkill" class="open-button" onclick=" Skill()" >Profil</button>
+              <a href="disconnect"><button  id="btnSkill" class="open-button" >Deconnexion</button></a>
             </div>
 
           </div>
@@ -198,7 +206,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     }
     else
     {
-    ;openForm();
+    openForm();
     }
   }
 
