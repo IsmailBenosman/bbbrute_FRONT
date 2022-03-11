@@ -75,14 +75,13 @@ button{
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  width: 80%;
 
 }
-#btnModif, #btnDeco{
+#btnModif, .btnDecon, #btnDecon, #btnDeco, #btnSkill{
 width: 100%;
-height: 80%;
+height: 100%;
 }
-#btnModif:hover, #btnDeco:hover{
+#btnModif:hover, #btnDecon:hover, .btnDecon:hover, #btnSkill:hover{
 background-color:#CB8F32;
 }
 .chat-popup {
@@ -108,7 +107,7 @@ background-color:#CB8F32;
 }
 
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color:#CB8F32;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -162,7 +161,7 @@ background-color:#CB8F32;
 }
 
 .topnav .search-container button:hover {
-  background: #56A85E;
+  background:#CB8F32;
 }
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -341,4 +340,9 @@ footer
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+
+#listEleve
+{
+	background-color: #F4DDBA;
 }
