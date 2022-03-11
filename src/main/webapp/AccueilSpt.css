@@ -23,16 +23,16 @@ body::-webkit-scrollbar
   display: flex;
   justify-content: space-between;
   background-color: gray;
-  background-image:url("Images/Poufsouffle.jpg");
-background-size: cover;
-background-repeat: repeat;
-width: 100%;
+  background-image:url("Images/Serpentard2.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	width: 100%;
 }
 
 #compte
 {
 
-  width: 25%;
+  width: 35%;
   height:100%;
 
 }
@@ -49,13 +49,11 @@ width:100%;
 #infoglobal
 {
   display: flex;
-  height: 80%;
 }
 #btn
 {
 display: flex;
-/* width: 100%;
-height: 100%; */
+
 }
 #photo
 {
@@ -71,7 +69,7 @@ height: auto;
 button{
   background-color: #2B6840;
   color: white;
-  padding: 16px 20px;
+  padding: 5px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;

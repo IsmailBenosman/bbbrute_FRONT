@@ -32,7 +32,7 @@ width: 100%;
 #compte
 {
 
-  width: 25%;
+  width: 35%;
   height:100%;
 
 }
@@ -71,7 +71,7 @@ height: auto;
 button{
   background-color: #A47C3E;
   color: white;
-  padding: 16px 20px;
+  padding: 5px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
