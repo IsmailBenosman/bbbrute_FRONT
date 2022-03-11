@@ -25,8 +25,8 @@
   <form>
     <table>
     <tr>
-      <td>Email :</td>
-      <td> <input required placeholder="Email" type="email"></td>
+      <td>Login :</td>
+      <td> <input required placeholder="login" type="login"></td>
     </tr>
 
     <tr>
