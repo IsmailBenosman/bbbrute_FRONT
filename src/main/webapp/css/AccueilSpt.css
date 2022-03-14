@@ -32,7 +32,7 @@ body::-webkit-scrollbar
 #compte
 {
 
-  width: 35%;
+  width: 40%;
   height:100%;
 
 }
@@ -53,6 +53,7 @@ width:100%;
 #btn
 {
 display: flex;
+height:100%;
 
 }
 #photo
@@ -73,14 +74,13 @@ button{
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  
+}
 
-}
-#btnModif, #btnSkill, #btnDeco{
+#btnModif, .btnDecon, #btnDecon, #btnDeco, #btnSkill{
 width: 100%;
-height: 80%;
+height: 100%;
 }
-#btnModif:hover, #btnSkill:hover{
+#btnModif:hover, #btnSkill:hover, .btnDeco:hover{
 background-color:#21481A;
 }
 .chat-popup {
@@ -91,6 +91,7 @@ background-color:#21481A;
 
   z-index: 10;
 }
+
 
 .form-container {
   max-width: 300px;
