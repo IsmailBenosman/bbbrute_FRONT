@@ -24,7 +24,6 @@ public class Mes_ELEVES extends HttpServlet {
 			String maison = ((Compte) request.getSession().getAttribute("connected")).getMaison();
 			List<Eleve> Groupe=Context.getSingleton().getDAOEleve().findAll(); 
 			request.setAttribute("listeEleves", Groupe);
-			System.out.println(Groupe);
 			getServletContext().getRequestDispatcher("/WEB-INF/liste_eleves.jsp").forward(request, response);
 			
 		}

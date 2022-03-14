@@ -13,6 +13,12 @@
 	<c:when test="${connected.maison=='Poufsouffle'}">
 		<link rel="stylesheet" href="css/AccueilPs.css">
 	</c:when>
+	<c:when test="${connected.maison=='Griffondor'}">
+		<link rel="stylesheet" href="css/AccueilSpt.css">
+	</c:when>
+	<c:when test="${connected.maison=='Serdaigle'}">
+		<link rel="stylesheet" href="css/AccueilPs.css">
+	</c:when>
 </c:choose>
 
 
@@ -49,17 +55,20 @@
 			</div>
 		</div>
 
+
+
 		<nav class="topnav">
-			<a href="#home">Home </a> 
-			<a href="#home" class="navig">Eleves </a> 
-			<a href="#contact">Option 3</a>
-			<a href="#contact">Option 4</a>
+			<a href="home" class="navig">Evenement </a> <a
+				href="calendrier.jsp">Calendrier</a> <a href="eleves">Cours</a>
+			<a href="boutique.jsp">Boutique</a>
 			<form action="/action_page.php">
 				<div class="search-container">
 					<form action="/action_page.php">
 						<input type="text" placeholder="Search.." name="search">
 						<button type="submit">
 							<i class="fa fa-search"></i>
+							<button type="submit">
+								<i class="fa fa-search"></i>
 						</button>
 					</form>
 				</div>
@@ -70,35 +79,31 @@
 
 	<section class="page" id="listEleve">
 		<h2>Liste des Eleves de la maison ${connected.maison}</h2>
-		<table >
+		<table>
 			<thead>
 				<tr align="center">
 					<th>Numero Etudiant</th>
 					<th>Nom</th>
 					<th>Prenom</th>
-					
+
 				</tr>
 			</thead>
 			<tbody>
-				<%-- <c:forEach items="${connected.maison}" var="m"> --%>
-					<tr align="center">
-					
-					<td> Venez </td>
-						<td> On est</td>
-						<td> bien</td>
-						
-				<%-- 		<td>${m.id}</td>
-						<td>${m.nom}</td>
-						<td>${m.prenom}</td> --%>
-					</tr>
-				<%-- </c:forEach> --%>
-			</tbody> 
+				<c:forEach items="${listeEleves}" var="eleve"> 
+				<tr align="center">
+
+					<td>${eleve.id}</td>
+					<td>${eleve.nom}</td>
+					<td>${eleve.prenom}</td>
+				</tr>
+				</c:forEach>
+			</tbody>
 		</table>
 		<footer>
 
 			<p>Lorem ipsum...</p>
 
 		</footer>
-	</section> 
+	</section>
 </body>
 </html>
