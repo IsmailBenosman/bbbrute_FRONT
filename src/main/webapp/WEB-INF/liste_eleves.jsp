@@ -58,8 +58,8 @@
 
 
 		<nav class="topnav">
-			<a href="home" class="navig">Evenement </a> <a
-				href="calendrier.jsp">Calendrier</a> <a href="eleves">Cours</a>
+			<a href="home" >Evenement </a> <a
+				href="calendrierP.jsp">Calendrier</a> <a href="eleves" class="navig">Cours</a>
 			<a href="boutique.jsp">Boutique</a>
 			<form action="/action_page.php">
 				<div class="search-container">
