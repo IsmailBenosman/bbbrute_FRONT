@@ -89,18 +89,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<%-- <c:forEach items="${connected.maison}" var="m"> --%>
+				<c:forEach items="${listeEleves}" var="eleve"> 
 				<tr align="center">
 
-					<td>Venez</td>
-					<td>On est</td>
-					<td>bien</td>
-
-					<%-- 		<td>${m.id}</td>
-						<td>${m.nom}</td>
-						<td>${m.prenom}</td> --%>
+					<td>${eleve.id}</td>
+					<td>${eleve.nom}</td>
+					<td>${eleve.prenom}</td>
 				</tr>
-				<%-- </c:forEach> --%>
+				</c:forEach>
 			</tbody>
 		</table>
 		<footer>
