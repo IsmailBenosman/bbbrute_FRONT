@@ -25,13 +25,13 @@
 
 
 <video autoplay muted loop id id="video">
-  <source loop src="Images\vid.mp4" type="video/mp4">
+  <source loop src="css\Images\Images\vid.mp4" type="video/mp4">
 </video>
 
 <div class="container">
 
 <h2> Bienvenue a Poudlard</h2>
-<img src="Images/HogwartsLogo2.png" alt="logo">
+<img src="css/Images/Images/HogwartsLogo2.png" alt="logo">
 <h3 > Connexion </h3>
   <form action="home" method="post">
     <table>

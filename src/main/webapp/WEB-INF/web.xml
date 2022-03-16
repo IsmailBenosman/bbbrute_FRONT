@@ -27,4 +27,24 @@
     <servlet-name>lobController</servlet-name>
     <url-pattern>/lobController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminController</display-name>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>controllers.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/AdminController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TousleselevesController</display-name>
+    <servlet-name>TousleselevesController</servlet-name>
+    <servlet-class>controllers.TousleselevesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TousleselevesController</servlet-name>
+    <url-pattern>/TousleselevesController</url-pattern>
+  </servlet-mapping>
 </web-app>
