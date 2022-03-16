@@ -222,7 +222,6 @@ padding:10px;
 			</form>
 		</nav>
 	</header>
-</head>
 <body>
 	<section class="container">
 		<aside class="calendar">
