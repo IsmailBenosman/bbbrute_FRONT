@@ -26,7 +26,10 @@ public class lobController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		Admin a = (Admin) Context.getSingleton().getDAOCompte().findById(id);
+		String urlImage = Base64.getEncoder().encodeToString(a.getPhoto());
+
 		request.setAttribute("profil", a);
+		request.setAttribute("photo", urlImage);
 		request.getRequestDispatcher("/WEB-INF/showLob.jsp").forward(request, response);
 		
 	}
@@ -41,7 +44,6 @@ public class lobController extends HttpServlet {
 		 
 		 a.setPhoto(fileContent.readAllBytes());
 		 
-		 System.out.println(a.getPhotoEncoded64().length());
 		 Context.getSingleton().getDAOCompte().insert(a);
 		 
 		 response.sendRedirect("lobTest?id=7");

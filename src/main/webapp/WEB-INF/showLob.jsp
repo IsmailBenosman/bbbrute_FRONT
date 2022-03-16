@@ -19,7 +19,7 @@ Admin a = new Admin("Abid", "Jordan", "jordan", "jordan", LocalDate.parse("1993-
 
 </table>
 
-<img src="data:image/jpg;base64,${profil.photoEncoded64}" width="240" height="300"/>
+<img src="data:image/jpg;base64,${photo}" width="240" height="300"/>
 
 </body>
 </html>
