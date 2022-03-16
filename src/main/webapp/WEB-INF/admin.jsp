@@ -13,11 +13,11 @@
 	<c:when test="${connected.maison=='Poufsouffle'}">
 		<link rel="stylesheet" href="css/AccueilPs.css">
 	</c:when>
-	<c:when test="${connected.maison=='Griffondor'}">
-		<link rel="stylesheet" href="css/AccueilGr.css">
+		<c:when test="${connected.maison=='Griffondor'}">
+		<link rel="stylesheet" href="css/AccueilSpt.css">
 	</c:when>
 	<c:when test="${connected.maison=='Serdaigle'}">
-		<link rel="stylesheet" href="css/AccueilSer.css">
+		<link rel="stylesheet" href="css/AccueilPs.css">
 	</c:when>
 </c:choose>
 
@@ -31,25 +31,25 @@
 		<div id="banniere">
 
 			<a href="home"><img id="logo" src="Images/HogwartsLogo.png"
-				alt="logo"></a>
+				alt="logo"> </a>
 
-
+			<!-- Banniere: info perso --------------------->
 			<div id="compte">
 
 				<div id="infoglobal">
 
 					<div id="infosleft">
 
-						<span id="Nom"> ${connected.nom} ${connected.prenom} </span>
+						<span id="Nom"> ${connected.nom } ${connected.prenom} </span>
 						<!--18/03/97 à ajouter dans page compte-->
-						<p id="solde">${connected.solde}</p>
+						<p id="solde">SOLDE :${connected.solde }€</p>
 					</div>
-					<img id="photo" src="Images/eleves/${connected.img}" alt="">
+					<img id="photo" src="Images/profs/${connected.img }" alt="">
+
 				</div>
 
 				<div id="btn">
 					<button id="btnModif" type="submit" class="btn">Modifier</button>
-					<button id="btnSkill" class="open-button" onclick=" Skill()">Profil</button>
 					<a href="disconnect"><button class="btnDecon"
 							class="open-button">Deconnexion</button></a>
 				</div>
@@ -57,10 +57,9 @@
 			</div>
 		</div>
 
-		
 		<nav class="topnav">
 			<a href="home" class="navig">Evenement </a> <a
-				href="calendrierE.jsp">Calendrier</a> <a href="listEleve.jsp">Cours</a>
+				href="calendrierP.jsp">Calendrier</a> <a href="eleves">Cours</a>
 			<a href="boutique.jsp">Boutique</a>
 			<form action="/action_page.php">
 				<div class="search-container">
@@ -70,7 +69,7 @@
 							<i class="fa fa-search"></i>
 							<button type="submit">
 								<i class="fa fa-search"></i>
-						</button>
+							</button>
 					</form>
 				</div>
 			</form>
@@ -124,28 +123,6 @@
 		<br />
 		<br />
 
-
-
-		<div class="chat-popup" id="myForm">
-			<form action="/action_page.php" class="form-container">
-				<h1>Profil</h1>
-
-				<label for="msg"><b>Skills et Items</b></label>
-				<aside>
-					<ul>
-						<li>Skill 1:</li>
-						<li>Skill 2:</li>
-						<li>Skill 3:</li>
-					</ul>
-					<ul>
-						<li>Item 1:</li>
-						<li>Item 2:</li>
-						<li>Item 3:</li>
-					</ul>
-				</aside>
-
-			</form>
-		</div>
 
 
 		<section id="texte">
@@ -394,6 +371,7 @@
 		if (x.style.display === "block") {
 			closeForm()
 		} else {
+			;
 			openForm();
 		}
 	}

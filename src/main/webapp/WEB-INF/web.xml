@@ -17,4 +17,14 @@
     <servlet-name>Disconnect</servlet-name>
     <url-pattern>/Disconnect</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>lobController</display-name>
+    <servlet-name>lobController</servlet-name>
+    <servlet-class>controllers.lobController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lobController</servlet-name>
+    <url-pattern>/lobController</url-pattern>
+  </servlet-mapping>
 </web-app>

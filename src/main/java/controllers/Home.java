@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import compte.Admin;
 import compte.Compte;
 import compte.Eleve;
 import compte.Prof;
@@ -39,8 +40,15 @@ public class Home extends HttpServlet {
 		{
 			request.getSession().setAttribute("connected", c);
 			response.sendRedirect("prof");
-
 		}
+			
+		else if(c instanceof Admin) 
+		{
+			request.getSession().setAttribute("connected", c);
+			response.sendRedirect("admin");
+		}
+
+		
 		else 
 		{
 			request.setAttribute("error", "Identifiants invalides !");
