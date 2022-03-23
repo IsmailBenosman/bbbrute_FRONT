@@ -48,8 +48,8 @@
 				</div>
 
 				<div id="btn">
-					<button id="btnModif" type="submit" class="btn">Modifier</button>
-					<button id="btnSkill" class="open-button" onclick=" Skill()">Profil</button>
+					<button id="btnSkill" class="open-button" onclick=" Skill()"> Mes compétences</button>
+					<a href="profil"><button id="btnModif" type="submit" class="btn">Profil</button></a>
 					<a href="disconnect"><button class="btnDecon"
 							class="open-button">Deconnexion</button></a>
 				</div>
@@ -59,10 +59,11 @@
 
 		
 		<nav class="topnav">
-			<a href="home" class="navig">Evenement </a> <a
-				href="calendrierP.jsp">Calendrier</a> 
+			<a href="home" class="navig">Evenement </a> 
+			<a href="calendrierP.jsp">Calendrier</a> 
 				<a href="">Cours</a>
 			<a href="boutique.jsp">Boutique</a>
+			
 			<form action="/action_page.php">
 				<div class="search-container">
 					<form action="/action_page.php">
