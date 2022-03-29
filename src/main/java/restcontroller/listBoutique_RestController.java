@@ -71,10 +71,10 @@ public class listBoutique_RestController {
 	}
 	
 	
-	@ResponseStatus(code = HttpStatus.NO_CONTENT)
-	@DeleteMapping("/{id}")
-	public void delete(@PathVariable Integer id) {
-		boutiqueService.delete(id);
-	}
+//	@ResponseStatus(code = HttpStatus.NO_CONTENT)
+//	@DeleteMapping("/{id}")
+//	public void delete(@PathVariable Integer id) {
+//		boutiqueService.delete(id);
+//	}
 	
 }
