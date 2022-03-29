@@ -11,9 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import compte.Compte;
 import compte.Eleve;
-import util.Context;
 
-@WebServlet("/eleves")
+@WebServlet("/listeEleves")
 public class Mes_ELEVES extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,7 +21,7 @@ public class Mes_ELEVES extends HttpServlet {
 		if(request.getParameter("id")==null) 
 		{
 			String maison = ((Compte) request.getSession().getAttribute("connected")).getMaison();
-			List<Eleve> Groupe=Context.getSingleton().getDAOEleve().findAllByMaison(maison); 
+			List<Eleve> Groupe= Context.getSingleton().getDAOEleve().findAllByMaison(maison); 
 			request.setAttribute("listeEleves", Groupe);
 			getServletContext().getRequestDispatcher("/WEB-INF/liste_eleves.jsp").forward(request, response);
 			
