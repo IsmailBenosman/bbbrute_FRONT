@@ -1,50 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
   <display-name>poudlard_front</display-name>
-  <welcome-file-list>
-    <welcome-file>home</welcome-file>
-  </welcome-file-list>
-  <listener>
-    <listener-class>listener.TomcatLaunch</listener-class>
-  </listener>
-  <servlet>
-    <description></description>
-    <display-name>Disconnect</display-name>
-    <servlet-name>Disconnect</servlet-name>
-    <servlet-class>controllers.Disconnect</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Disconnect</servlet-name>
-    <url-pattern>/Disconnect</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>lobController</display-name>
-    <servlet-name>lobController</servlet-name>
-    <servlet-class>controllers.lobController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>lobController</servlet-name>
-    <url-pattern>/lobController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>AdminController</display-name>
-    <servlet-name>AdminController</servlet-name>
-    <servlet-class>controllers.AdminController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AdminController</servlet-name>
-    <url-pattern>/AdminController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>TousleselevesController</display-name>
-    <servlet-name>TousleselevesController</servlet-name>
-    <servlet-class>controllers.TousleselevesController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TousleselevesController</servlet-name>
-    <url-pattern>/TousleselevesController</url-pattern>
-  </servlet-mapping>
+ <servlet>
+ 	<servlet-name>dispatcherServlet</servlet-name>
+ 	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+ 	<init-param>
+ 		<param-name>contextConfigLocation</param-name>
+ 		<param-value>centerpark.config.WebConfig</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>contextClass</param-name>
+ 		<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+ 		</param-value>
+ 	</init-param>
+ 	<load-on-startup>1</load-on-startup>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>dispatcherServlet</servlet-name>
+ 	<url-pattern>/</url-pattern>
+ </servlet-mapping>
 </web-app>
